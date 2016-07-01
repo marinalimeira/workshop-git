@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Git workshop</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/blueprint.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,10 +24,55 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <section data-background="#cfd8dc">
+<!--     add git logo       -->
+          <h1>git</h1>
+        </section>
+        <section data-background="#424242" class="linus">
+          <h2>Criado por Linus Torvalds</h2>
+        </section>
+        <section data-background="#1a237e">
+          <h1><b>$ git init</b></h1>
+          <p>Inicia um repositório.</p>
+        </section>
+        <section data-background="#00838f">
+          <h1><b>$ git remote add origin <i>repo</i></b></h1>
+          <p>Conecta a um repositório remoto.</p>
+        </section>
+        <section data-background="#2e7d32">
+          <h1><b>$ git clone <i>url</i></b></h1>
+          <p>Cria uma cópia do repositório localmente.</p>
+        </section>
+        <section data-background="#bf360c">
+          <h1><b>$ git add <i>file</i></b></h1>
+          <p>Prepara os arquivos para commit.</p>
+        </section>
+        <section data-background="#ffab00">
+          <h1><b>$ git rm <i>file</i></b></h1>
+          <p>Remove o arquivo do repositório.</p>
+        </section>
+        <section data-background="#00e676">
+          <h1><b>$ git commit -m <i>message</i></b></h1>
+          <p>Commita os arquivos que foram alterados.</p>
+        </section>
+        <section data-background="#c51162">
+          <h1><b>$ git push origin <i>branch</i></b></h1>
+          <p>Envia os commits para um branch remoto.</p>
+        </section>
+        <section data-background="#ff6d00">
+          <h1><b>$ git pull origin <i>branch</i></b></h1>
+          <p>Atualiza os commits de um branch remoto.</p>
+        </section>
+        <section data-background="#4527a0">
+          <h1><b>$ git diff</i></b></h1>
+          <p>Mostra as alterações locais.</p>
+        </section>
+        <section data-background="#0091ea">
+          <h1><b>$ git log</i></b></h1>
+          <p>Mostra os commits que foram feitos.</p>
+        </section>
+      </div>
+    </div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
