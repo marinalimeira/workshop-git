@@ -24,7 +24,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-        <section data-background="#cfd8dc">
+        <section data-background="#f5f5f5">
           <img src="imgs/git-logo.png" alt=""/>
         </section>
         <section data-background="css/theme/images/linus.png"
@@ -32,14 +32,26 @@
           data-background-repeat="no-repeat"
           data-background-size="300px 300px"
           data-background-position="bottom left">
-          <h2>Criado por Linus Torvalds</h2>
+          <h1>Criado por Linus Torvalds</h1>
         </section>
         <section data-background="#880e4f">
-          <h2><b>Instalação</b></h2>
+          <section>
+            <h2><b>Instalação</b></h2>
           <p>Linux<br>
             <b># apt-get install git</b></p>
           <p>Mac OS<br>
             <b>$ brew install git</b></p>
+          <p>Windows<br>
+            <b><a href="https://desktop.github.com/">desktop.github.com</a></b><br />
+            <small>*instruções abaixo para executar o shell*</small>
+          </p>
+          </section>
+          <section>
+            <img src="imgs/git-windows.png" alt="" />
+          </section>
+          <section>
+            <img src="imgs/git-windows-shell.png" alt="" />
+          </section>
         </section>
         <section data-background="#1b5e20">
           <h2><b>$ git config --global user.name "Marina Limeira"</b></h2>
@@ -61,6 +73,9 @@
           <h1><b>$ git clone <i>url</i></b></h1>
           <p>Cria uma cópia do repositório localmente.</p>
         </section>
+        <section data-background="#4a148c">
+          <h1><b>https x ssh</b></h1>
+        </section>
         <section data-background="#bf360c">
           <h1><b>$ git add <i>file</i></b></h1>
           <p>Prepara os arquivos para commit.</p>
@@ -69,7 +84,7 @@
           <h1><b>$ git rm <i>file</i></b></h1>
           <p>Remove o arquivo do repositório.</p>
         </section>
-        <section data-background="#00e676">
+        <section data-background="#006064">
           <h1><b>$ git commit -m <i>message</i></b></h1>
           <p>Commita os arquivos que foram alterados.</p>
         </section>
@@ -77,7 +92,7 @@
           <h1><b>$ git push origin <i>branch</i></b></h1>
           <p>Envia os commits para um branch remoto.</p>
         </section>
-        <section data-background="#ff6d00">
+        <section data-background="#827717">
           <h1><b>$ git pull origin <i>branch</i></b></h1>
           <p>Atualiza os commits de um branch remoto.</p>
         </section>
@@ -89,6 +104,12 @@
           <h1><b>$ git log</i></b></h1>
           <p>Mostra os commits que foram feitos.</p>
         </section>
+        <section data-background="#00c853">
+          <h2>E agora?</h2>
+          <h2><b><a href="https://education.github.com/pack">education.github.com/pack</a></b></h2>
+          <br />
+          <h3>.gitignore, branch, merge, pull request, checkout, reset, rebase, fork, git flow</h3>
+        </section>
       </div>
     </div>
 
@@ -98,7 +119,8 @@
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				history: true,
+        history: true,
+        transition: 'fade',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
